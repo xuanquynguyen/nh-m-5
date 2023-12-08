@@ -1,0 +1,778 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="SHOW_CONTINUE" xml:space="preserve">
+    <value> Tiếp tục?</value>
+  </data>
+  <data name="MSG_CHECK_INSTALL_SQL" xml:space="preserve">
+    <value>SQL Server chưa được cài đặt, vui lòng cài đặt SQL server trước khi tiếp tục</value>
+  </data>
+  <data name="SHOW_EMPLOYEES" xml:space="preserve">
+    <value>Nhân viên: </value>
+    <comment>Employees: </comment>
+  </data>
+  <data name="SHOW_XLS_INTO_MN" xml:space="preserve">
+    <value>Thành tiền</value>
+  </data>
+  <data name="ERROR_ADDING_DATA" xml:space="preserve">
+    <value>Lỗi khi thêm dữ liệu</value>
+  </data>
+  <data name="SHOW_TO_DAY" xml:space="preserve">
+    <value> đến ngày </value>
+  </data>
+  <data name="ERROR_ENTER_LOGIN" xml:space="preserve">
+    <value>Vui lòng nhập tên người dùng và mật khẩu</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERROR_ENTER_CF_PASSWORD" xml:space="preserve">
+    <value>Vui lòng xác nhận mật khẩu</value>
+  </data>
+  <data name="SHOW_OLD_CUSTOMERS" xml:space="preserve">
+    <value>Khách hàng cũ</value>
+    <comment>Old customers</comment>
+  </data>
+  <data name="ERROR_ADD_BILLDT" xml:space="preserve">
+    <value>Lỗi khi thêm chi tiết hóa đơn</value>
+  </data>
+  <data name="ERROR_UPDATE_CUS_STATUS" xml:space="preserve">
+    <value>Lỗi khi cập nhật trạng thái khách hàng</value>
+    <comment>Error when updating customer status</comment>
+  </data>
+  <data name="EngFlag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\EngFlag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="dev16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dev16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Extension" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Extension.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHOW_XLS_UN_PRC" xml:space="preserve">
+    <value>Giá tiền</value>
+  </data>
+  <data name="MSG_ENTER_USERNAME" xml:space="preserve">
+    <value>Vui lòng nhập tên người dùng</value>
+  </data>
+  <data name="ERROR_PRODUCT_PRICE_EMPTY" xml:space="preserve">
+    <value>Vui lòng nhập giá sản phẩm</value>
+  </data>
+  <data name="view16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\view16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="report16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\report16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Database-Backup-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Database-Backup-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHOW_SALES_CHART" xml:space="preserve">
+    <value>Biểu đồ doanh số</value>
+  </data>
+  <data name="MSG_SELECT_TABLE_FIRST" xml:space="preserve">
+    <value>Vui lòng chọn bàn hoặc khách hàng trước</value>
+    <comment>Please select table or customer first</comment>
+  </data>
+  <data name="SHOW_XLS_TITLE_NAME" xml:space="preserve">
+    <value>BÁO CÁO BÁN HÀNG</value>
+  </data>
+  <data name="ERROR_WHEN_UPDATING" xml:space="preserve">
+    <value>Lỗi khi cập nhật</value>
+  </data>
+  <data name="ERROR_ENTRIEVING_DATA" xml:space="preserve">
+    <value>Lỗi truy xuất dữ liệu</value>
+  </data>
+  <data name="SHOW_CUS_WAITING" xml:space="preserve">
+    <value>Khách hàng đang chờ...</value>
+    <comment>Customers are waiting...</comment>
+  </data>
+  <data name="ERROR_USER_NOTFOUND" xml:space="preserve">
+    <value>Không tìm thấy nhân viên có tên đăng nhập này</value>
+  </data>
+  <data name="ERROR_RETRIEVING_USER" xml:space="preserve">
+    <value>Lỗi khi truy xuất tên người dùng</value>
+  </data>
+  <data name="ERROR_ENTER_PASSWORD" xml:space="preserve">
+    <value>Vui lòng nhập mật khẩu</value>
+  </data>
+  <data name="SHOW_TOOLTIP_SET_PR" xml:space="preserve">
+    <value>Cài đặt kích thước sản phẩm</value>
+  </data>
+  <data name="ERROR_ENTER_UNIT" xml:space="preserve">
+    <value>Vui lòng nhập đơn vị tính</value>
+  </data>
+  <data name="noneImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\noneImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="open24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\open24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHOW_EXTENTION_XLS" xml:space="preserve">
+    <value>.xls</value>
+  </data>
+  <data name="MSG_DEL_AC" xml:space="preserve">
+    <value>Xóa tài khoản đăng nhập?</value>
+  </data>
+  <data name="setting32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\setting32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="del16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\del16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHOW_XLS_FILTER" xml:space="preserve">
+    <value>Excel Documents (*.xls)|*.xls</value>
+  </data>
+  <data name="MSG_NOT_ALLOWED" xml:space="preserve">
+    <value>Số không được phép bằng 0</value>
+  </data>
+  <data name="ERROR_NOT_LESS_TIME" xml:space="preserve">
+    <value>Thời gian kết thúc không được nhỏ hơn thời gian bắt đầu</value>
+  </data>
+  <data name="SHOW_TOTAL_MN" xml:space="preserve">
+    <value>Tổng tiền:</value>
+  </data>
+  <data name="ERROR_UPDATE_TB_STATUS" xml:space="preserve">
+    <value>Lỗi khi cập nhật trạng thái bàn</value>
+  </data>
+  <data name="SHOW_TABLE_LIST" xml:space="preserve">
+    <value>Danh sách bàn</value>
+    <comment>Table list</comment>
+  </data>
+  <data name="SHOW_PDF_FILTER" xml:space="preserve">
+    <value>PDF file (*.pdf)|*.pdf</value>
+  </data>
+  <data name="ERROR_ENTER_USER" xml:space="preserve">
+    <value>Vui lòng nhập tên người dùng</value>
+  </data>
+  <data name="sytem" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sytem.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERR_EMPTY_DBNNAME" xml:space="preserve">
+    <value>Vui lòng nhập tên database</value>
+  </data>
+  <data name="SHOW_XLS_ID" xml:space="preserve">
+    <value>Mã hóa đơn</value>
+  </data>
+  <data name="ERROR_ENTER_ONE_INFO" xml:space="preserve">
+    <value>Cần phải điền ít nhất 1 thông tin của khách hàng</value>
+  </data>
+  <data name="ERROR_SHOW_ERROR" xml:space="preserve">
+    <value>Đã xảy ra lỗi</value>
+  </data>
+  <data name="ERROR_CREATED_ACCOUNT" xml:space="preserve">
+    <value>Đã tạo tài khoản đăng nhập cho người dùng này</value>
+  </data>
+  <data name="SHOW_PHONE_NUMBER" xml:space="preserve">
+    <value>Điện thoại: </value>
+    <comment>Phone number: </comment>
+  </data>
+  <data name="MSG_WANT_TO_SAVE" xml:space="preserve">
+    <value>Bạn có muốn lưu dữ liệu trước khi rời đi?</value>
+    <comment>Do you want to save data before leaving?</comment>
+  </data>
+  <data name="INF_CONNECT_SUCCESS" xml:space="preserve">
+    <value>Kết nối thành công</value>
+  </data>
+  <data name="MSG_SELECT_GR_FIRST" xml:space="preserve">
+    <value>Chọn nhóm thực đơn trước</value>
+    <comment>Select the menu group first</comment>
+  </data>
+  <data name="ERROR_ADD_BILL" xml:space="preserve">
+    <value>Lỗi khi thêm hóa đơn</value>
+  </data>
+  <data name="SHOW_TABLE_MERGE" xml:space="preserve">
+    <value>Gộp bàn</value>
+  </data>
+  <data name="exit16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERROR_SELECT_EM" xml:space="preserve">
+    <value>vui lòng chọn nhân viên</value>
+  </data>
+  <data name="ERROR_GETTING_STORE_INFO" xml:space="preserve">
+    <value>Lỗi lấy thông tin cửa hàng</value>
+  </data>
+  <data name="MSG_DEL_QUES" xml:space="preserve">
+    <value> sẽ bị xóa, Tiếp tục?</value>
+    <comment> Will be deleted, Continue?</comment>
+  </data>
+  <data name="SHOW_INACTIVE" xml:space="preserve">
+    <value>Không hoạt động</value>
+  </data>
+  <data name="SHOW_RP_SALES_PDF_NAME" xml:space="preserve">
+    <value>BÁO CÁO BÁN HÀNG.pdf</value>
+  </data>
+  <data name="MSG_ERROR_SETTING_UP" xml:space="preserve">
+    <value>Lỗi khi thiết lập cài đặt</value>
+  </data>
+  <data name="table16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\table16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="merge" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\merge.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHOW_SELECT_FOR_DEL" xml:space="preserve">
+    <value>Chọn 1 dòng để xóa</value>
+  </data>
+  <data name="SHOW_NAME_ADD_BILLDT" xml:space="preserve">
+    <value>Thêm đồ uống (thức ăn) vào hóa đơn</value>
+  </data>
+  <data name="pdf32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pdf32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="nonimg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\nonimg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG_HAVENT_SELECT_TABLE" xml:space="preserve">
+    <value>Chưa chọn bàn</value>
+    <comment>Haven't selected a table yet</comment>
+  </data>
+  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERROR_DEL_ADMIN" xml:space="preserve">
+    <value>Không thể xóa tài khoản admin</value>
+  </data>
+  <data name="accept" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\accept.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHOW_FROM_YEAR" xml:space="preserve">
+    <value>Từ năm </value>
+  </data>
+  <data name="ERROR_LOAD_DATA_BILL" xml:space="preserve">
+    <value>Lỗi load dữ liệu hóa đơn</value>
+    <comment>Error loading invoice data</comment>
+  </data>
+  <data name="MSG_TABLE_EMPTY" xml:space="preserve">
+    <value>Bàn chưa có khách</value>
+    <comment>The table has no guests</comment>
+  </data>
+  <data name="ERROR_SWITCHING_TB" xml:space="preserve">
+    <value>Lỗi khi chuyển bàn</value>
+  </data>
+  <data name="save" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\save.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG_ALREADY_OCCUPIED" xml:space="preserve">
+    <value>Bàn đang có khách</value>
+    <comment>The table is occupied</comment>
+  </data>
+  <data name="SHOW_XLS_DATE" xml:space="preserve">
+    <value>Ngày</value>
+  </data>
+  <data name="MSG_DELETED" xml:space="preserve">
+    <value>Đã xóa </value>
+    <comment>Deleted </comment>
+  </data>
+  <data name="user16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHOW_DAY" xml:space="preserve">
+    <value>Ngày: </value>
+    <comment>Day: </comment>
+  </data>
+  <data name="SHOW_NO_GUEST_YET" xml:space="preserve">
+    <value>Chưa có khách</value>
+  </data>
+  <data name="MSG_HAVENT_CHOSEN_TB" xml:space="preserve">
+    <value>You have not selected a transfer table or a receiving table!</value>
+  </data>
+  <data name="MSG_SELECT_AC" xml:space="preserve">
+    <value>Select the account to delete</value>
+  </data>
+  <data name="accept24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\accept24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHOW_LOADING_DATA" xml:space="preserve">
+    <value>Đang load dữ liệu, vui lòng chờ...</value>
+  </data>
+  <data name="setting24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\setting24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG_NOTIFICATION" xml:space="preserve">
+    <value>Thông báo</value>
+    <comment>Notification</comment>
+  </data>
+  <data name="Restore16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Restore16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG_NO_RIGHT" xml:space="preserve">
+    <value>Bạn không có quyền thực hiện thao tác này.</value>
+  </data>
+  <data name="MSG_QUES_ACCEPT" xml:space="preserve">
+    <value>Bạn chưa nhập số tiền khách thanh toán, bạn muốn tiếp tục không?</value>
+  </data>
+  <data name="ERROR_SELECT_AC" xml:space="preserve">
+    <value>Vui lòng chọn 1 tài khoản</value>
+  </data>
+  <data name="ERROR_PRODUCT_NAME_EMPTY" xml:space="preserve">
+    <value>Vui lòng nhập tên</value>
+  </data>
+  <data name="SHOW_RP_SALES_XLS_NAME" xml:space="preserve">
+    <value>BÁO CÁO BÁN HÀNG_</value>
+  </data>
+  <data name="ERROR_MANIPULATING_USER" xml:space="preserve">
+    <value>Lỗi thao tác dữ liệu người dùng</value>
+    <comment>Error when manipulating user data</comment>
+  </data>
+  <data name="add16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHOW_HAVE_GUEST" xml:space="preserve">
+    <value>Đang có khách</value>
+  </data>
+  <data name="ERROR_UPDATE_BILL" xml:space="preserve">
+    <value>Lỗi cập nhật hóa đơn</value>
+    <comment>Invoice update error</comment>
+  </data>
+  <data name="ERROR_PRODUCT_QUANTITY_EMPTY" xml:space="preserve">
+    <value>Vui lòng nhập số lượng sản phẩm</value>
+  </data>
+  <data name="ERROR_EXISTS_NAME" xml:space="preserve">
+    <value>Tên đã tồn tại, vui lòng chọn tên khác</value>
+  </data>
+  <data name="category" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\category.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHOW_INTO_MONEY" xml:space="preserve">
+    <value>Thành tiền</value>
+    <comment>Into money</comment>
+  </data>
+  <data name="SHOW_TABLE_EMPTY" xml:space="preserve">
+    <value>Bàn  trống</value>
+  </data>
+  <data name="ERROR_UPDATE_BILL_STATUS" xml:space="preserve">
+    <value>Lỗi khi cập nhật trạng thái bill</value>
+    <comment>Error when updating bill status</comment>
+  </data>
+  <data name="SHOW_XLS_CUS" xml:space="preserve">
+    <value>Khách hàng</value>
+  </data>
+  <data name="SHOW_SELECT_FOR_EDIT" xml:space="preserve">
+    <value>Chọn 1 dòng để sửa</value>
+  </data>
+  <data name="ERROR_RETRIEVING_LOGIN_INFO" xml:space="preserve">
+    <value>Lỗi truy xuất thông tin Đăng nhập theo ID người dùng</value>
+  </data>
+  <data name="store16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\store16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERROR_EXPORTING_PDF" xml:space="preserve">
+    <value>Lỗi khi xuất file</value>
+  </data>
+  <data name="SHOW_WAIT_EXPORT_FILE" xml:space="preserve">
+    <value>Đang xuất file, vui lòng chờ...</value>
+  </data>
+  <data name="MSG_CLICK_YES_LOG_OUT" xml:space="preserve">
+    <value>Nhấn Yes để đăng xuất tài khoản</value>
+    <comment>Click Yes to log out of your account</comment>
+  </data>
+  <data name="ERROR_UPDATE_TABLE_STATUS" xml:space="preserve">
+    <value>Lỗi khi cập nhật trạng thái bàn</value>
+    <comment>Error when updating table status</comment>
+  </data>
+  <data name="cancel24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG_DONT_SAVE_C" xml:space="preserve">
+    <value>Vui lòng chọn vị trí lưu file khác ổ đĩa cài đặt SQL</value>
+  </data>
+  <data name="setting" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\setting.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG_NOTHING_TO_SAVE" xml:space="preserve">
+    <value>Không có gì để lưu</value>
+    <comment>Nothing to save</comment>
+  </data>
+  <data name="MSG_CLOSE_FORM" xml:space="preserve">
+    <value>Nhấn Yes để đóng ứng dụng</value>
+    <comment>Click Yes to close the application</comment>
+  </data>
+  <data name="changeTable" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\changeTable.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHOW_YEAR" xml:space="preserve">
+    <value>Năm </value>
+  </data>
+  <data name="SHOW_XLS_TB" xml:space="preserve">
+    <value>Bàn</value>
+  </data>
+  <data name="SHOW_XLS_QUANTILY" xml:space="preserve">
+    <value>Số lượng</value>
+  </data>
+  <data name="ERROR_ACCESS_DATA" xml:space="preserve">
+    <value>Lỗi truy cập dữ liệu</value>
+  </data>
+  <data name="ERROR_CF_PASSWORD_NOT_MATCH" xml:space="preserve">
+    <value>Mật khẩu xác nhận không khớp</value>
+  </data>
+  <data name="SHOW_TOOLTIP_HELP" xml:space="preserve">
+    <value>Nhấn chuột phải vào lưới để sửa hoặc xóa</value>
+  </data>
+  <data name="ViFlag" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ViFlag.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="unnamed" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unnamed1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG_OUT_OF_LIST" xml:space="preserve">
+    <value> ra khỏi danh sách</value>
+    <comment> out of list</comment>
+  </data>
+  <data name="SHOW_XLS_PR" xml:space="preserve">
+    <value>Mặt hàng</value>
+  </data>
+  <data name="SHOW_TO_YEAR" xml:space="preserve">
+    <value> đến năm </value>
+  </data>
+  <data name="SHOW_UNIT_PRICE" xml:space="preserve">
+    <value>Đơn giá</value>
+    <comment>Unit price</comment>
+  </data>
+  <data name="cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHOW_SETTING_TB" xml:space="preserve">
+    <value>Cài đặt hiển thị bàn</value>
+  </data>
+  <data name="ERROR_LOAD_DB" xml:space="preserve">
+    <value>Load truy xuất database name</value>
+  </data>
+  <data name="login16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERROR_UD_STATUS_TB" xml:space="preserve">
+    <value>Lỗi cập nhật trạng thái khi chuyển bàn</value>
+  </data>
+  <data name="open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHOW_CANT_DEL" xml:space="preserve">
+    <value>Bàn đang có khách không thể xóa</value>
+  </data>
+  <data name="menu16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="billPlease" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\billPlease.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHOW_PRODUCT_NAME" xml:space="preserve">
+    <value>Tên sản phẩm</value>
+    <comment>Product name</comment>
+  </data>
+  <data name="language" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\language.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG_DATABASE_NOT_FOUND" xml:space="preserve">
+    <value>Cơ sở dữ liệu không được tìm thấy, bạn có thể sử dụng chức năng Khôi phục cơ sở dữ liệu ở góc trên bên phải của biểu mẫu</value>
+  </data>
+  <data name="SHOW_TABLE_CUS" xml:space="preserve">
+    <value>Bàn/Khách hàng: </value>
+    <comment>Table/Customers: </comment>
+  </data>
+  <data name="MSG_MAX_NUMBER" xml:space="preserve">
+    <value>Chiều rộng tối đa 150, chiều cao tối đa 160</value>
+  </data>
+  <data name="ERROR_SAVE_DATA" xml:space="preserve">
+    <value>Lỗi khi lưu dữ liệu</value>
+  </data>
+  <data name="MSG_DONE" xml:space="preserve">
+    <value>Done!</value>
+    <comment>Done!</comment>
+  </data>
+  <data name="SHOW_TOTAL_MONEY" xml:space="preserve">
+    <value>Tổng tiền</value>
+    <comment>Total money</comment>
+  </data>
+  <data name="ERROR_WHEN_DEL" xml:space="preserve">
+    <value>Lỗi khi xóa </value>
+    <comment>Error when deleting</comment>
+  </data>
+  <data name="help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\help.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Restore-Window-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Restore-Window-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bill16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bill16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="excel32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\excel32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHOW_NONE" xml:space="preserve">
+    <value />
+    <comment>""</comment>
+  </data>
+  <data name="SHOW_IS_ACTIVE" xml:space="preserve">
+    <value>Đang hoạt động</value>
+  </data>
+  <data name="ERROR_DELETING_USER" xml:space="preserve">
+    <value>Lỗi khi xóa người dùng</value>
+    <comment>Error deleting user</comment>
+  </data>
+  <data name="connect-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\connect-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHOW_KEY_ENCRYPT" xml:space="preserve">
+    <value>@key#yek</value>
+  </data>
+  <data name="logout16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHOW_BILL_CODE" xml:space="preserve">
+    <value>Mã hóa đơn: </value>
+    <comment>Bill code: </comment>
+  </data>
+  <data name="cus16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cus16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERROR_EMPTY_SERVERNAME" xml:space="preserve">
+    <value>Vui lòng nhập tên server</value>
+  </data>
+  <data name="lock" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG_WILL_DELETE" xml:space="preserve">
+    <value> sẽ bị xóa, tiếp tục?</value>
+  </data>
+  <data name="SHOW_XLS_EM" xml:space="preserve">
+    <value>Nhân viên</value>
+  </data>
+  <data name="ERROR_LOAD_GROUP" xml:space="preserve">
+    <value>Lỗi khi load nhóm</value>
+  </data>
+  <data name="SHOW_ADDRESS" xml:space="preserve">
+    <value>Địa chỉ: </value>
+    <comment>Address: </comment>
+  </data>
+  <data name="QRZalo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QRZalo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHOW_TO" xml:space="preserve">
+    <value> sang </value>
+  </data>
+  <data name="SHOW_BILL_FROM" xml:space="preserve">
+    <value>Hóa đơn từ </value>
+  </data>
+  <data name="MSG_WRONG_PASSWORD" xml:space="preserve">
+    <value>Mật khẩu không đúng</value>
+  </data>
+  <data name="search16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERROR_EDITING_DATA" xml:space="preserve">
+    <value>Lỗi khi sửa dữ liệu</value>
+  </data>
+  <data name="pass16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pass16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHOW_NUMBER" xml:space="preserve">
+    <value>Số lượng</value>
+    <comment>Number</comment>
+  </data>
+  <data name="source" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\source.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="permission16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\permission16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settings-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settings-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHOW_SETTING_PR" xml:space="preserve">
+    <value>Cài đặt hiển thị sản phẩm</value>
+  </data>
+  <data name="ERROR_WRONG_USERNAME" xml:space="preserve">
+    <value>Sai tên đăng nhập hoặc mật khẩu</value>
+  </data>
+  <data name="SHOW_CUS_LIST" xml:space="preserve">
+    <value>Danh sách khách hàng</value>
+    <comment>Customers list</comment>
+  </data>
+  <data name="INF_WAIT_LOAD_SERVER" xml:space="preserve">
+    <value>Đang load server, xin vui lòng chờ...</value>
+  </data>
+  <data name="SHOW_ALREADY_EXIST" xml:space="preserve">
+    <value>Đã tồn tại</value>
+  </data>
+  <data name="MSG_RESET_LANG" xml:space="preserve">
+    <value>Phần mềm cần khởi động lại, nhấn OK để tiếp tục.</value>
+  </data>
+  <data name="SHOW_TOOLTIP_SET_TB" xml:space="preserve">
+    <value>Cài đặt kích thước bàn</value>
+  </data>
+  <data name="user-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERROR_OUT_SIZE_IMAGE" xml:space="preserve">
+    <value>Hình ảnh không được lớn hơn kích thước 64x64, Kích thước hiện tại là: </value>
+  </data>
+  <data name="MSG_DELETE_LOGIN_FIRST" xml:space="preserve">
+    <value>Người dùng đang có một tài khoản đăng nhập, vui lòng xóa tài khoản đăng nhập trước.</value>
+  </data>
+  <data name="MSG_CONNECT_STR_NONE" xml:space="preserve">
+    <value>Bạn chưa thiết lập kết nối database, vui lòng thiết lập trước</value>
+  </data>
+  <data name="shop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shop.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="users" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\users.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG_PRESS_NUMBER" xml:space="preserve">
+    <value>Vui lòng nhập số</value>
+  </data>
+  <data name="ERROR_ENTER_UNIT_PRICE" xml:space="preserve">
+    <value>Vui lòng nhập đơn giá</value>
+  </data>
+  <data name="SHOW_HAVENT_CHOSEN_TB" xml:space="preserve">
+    <value>Haven't chosen a table yet</value>
+  </data>
+  <data name="ERROR_ENTER_NEW_PASSWORD" xml:space="preserve">
+    <value>Vui lòng nhập mật khẩu mới</value>
+  </data>
+  <data name="edit16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\edit16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SHOW_TAX_CODE" xml:space="preserve">
+    <value>Mã số thuế: </value>
+    <comment>Tax code: </comment>
+  </data>
+  <data name="SHOW_WAIT_EXPORT" xml:space="preserve">
+    <value>Đang xuất file pdf, vui lòng chờ...</value>
+  </data>
+  <data name="exec" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exec.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ERROR_LOADING_AREA" xml:space="preserve">
+    <value>Lỗi khi load khu vực</value>
+  </data>
+  <data name="MSG_CHOOSE_AREA" xml:space="preserve">
+    <value>Vui lòng chọn khu vực</value>
+  </data>
+  <data name="MSG_ENTER_TABLE" xml:space="preserve">
+    <value>Vui lòng nhập tên bàn</value>
+  </data>
+</root>

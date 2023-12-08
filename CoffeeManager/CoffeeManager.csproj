@@ -1,0 +1,676 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8C44E8E2-6062-4C53-92D9-9C61B8BD7751}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CoffeeManager</RootNamespace>
+    <AssemblyName>CoffeeManager</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\CmnExcel.cs" />
+    <Compile Include="Common\ClPrintBill.cs" />
+    <Compile Include="Common\Common.cs" />
+    <Compile Include="Common\ConstDef.cs" />
+    <Compile Include="Database\ConnectSql.cs" />
+    <Compile Include="Database\Model\Out\DbCustomerOut.cs" />
+    <Compile Include="Database\Model\DbBill.cs" />
+    <Compile Include="Database\Model\DbEmployess.cs" />
+    <Compile Include="Database\Model\In\DbBillDetailtIn.cs" />
+    <Compile Include="Database\Model\Out\DbLoginOut.cs" />
+    <Compile Include="Database\Model\In\DbLoginIn.cs" />
+    <Compile Include="Database\Model\Out\DbBillDetailtOut.cs" />
+    <Compile Include="Database\Model\In\DbBillIn.cs" />
+    <Compile Include="Database\Model\Out\DbBillOut.cs" />
+    <Compile Include="Database\Model\DbProduct.cs" />
+    <Compile Include="Database\Model\In\DbProductIn.cs" />
+    <Compile Include="Database\Model\Out\DbLoginRoleIn.cs" />
+    <Compile Include="Database\Model\Out\DbLoginRoleOut.cs" />
+    <Compile Include="Database\Model\Out\DbMenuItemOut.cs" />
+    <Compile Include="Database\Model\Out\DbProductOut.cs" />
+    <Compile Include="Database\Model\DbTable.cs" />
+    <Compile Include="Database\Model\DbCustomer.cs" />
+    <Compile Include="Database\Model\Out\DbEmployeesOut.cs" />
+    <Compile Include="Database\Model\In\DbEmployeesIn.cs" />
+    <Compile Include="Database\Model\DbStore.cs" />
+    <Compile Include="Database\Model\Out\DbStoreOut.cs" />
+    <Compile Include="Database\Model\DbLogin.cs" />
+    <Compile Include="DataSetAll.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetAll.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Database\Model\DbSaleReport.cs" />
+    <Compile Include="Database\Model\Out\DbSaleReportOut.cs" />
+    <Compile Include="Database\Model\In\DbCustomerIn.cs" />
+    <Compile Include="Database\Model\DbDatabase.cs" />
+    <Compile Include="ProgressBarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressBarForm.Designer.cs">
+      <DependentUpon>ProgressBarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmAuthor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmAuthor.Designer.cs">
+      <DependentUpon>FrmAuthor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmConfirmPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmConfirmPassword.Designer.cs">
+      <DependentUpon>FrmConfirmPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmConnect.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmConnect.Designer.cs">
+      <DependentUpon>FrmConnect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmChangePassword.Designer.cs">
+      <DependentUpon>FrmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmSetting.Designer.cs">
+      <DependentUpon>FrmSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\LgConfig.cs" />
+    <Compile Include="Properties\Resources.en.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.en.resx</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmAddBillDetailt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmAddBillDetailt.Designer.cs">
+      <DependentUpon>FrmAddBillDetailt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmAddOrEditEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmAddOrEditEmployees.Designer.cs">
+      <DependentUpon>FrmAddOrEditEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmCusInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmCusInfo.Designer.cs">
+      <DependentUpon>FrmCusInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmAddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmAddProduct.Designer.cs">
+      <DependentUpon>FrmAddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmAddTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmAddTable.Designer.cs">
+      <DependentUpon>FrmAddTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmChangeTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmChangeTable.Designer.cs">
+      <DependentUpon>FrmChangeTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmCus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmCus.Designer.cs">
+      <DependentUpon>FrmCus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmEmployees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmEmployees.Designer.cs">
+      <DependentUpon>FrmEmployees.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmGroupTb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmGroupTb.Designer.cs">
+      <DependentUpon>FrmGroupTb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmGroup.Designer.cs">
+      <DependentUpon>FrmGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmLoginInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmLoginInfo.Designer.cs">
+      <DependentUpon>FrmLoginInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmLoginRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmLoginRole.Designer.cs">
+      <DependentUpon>FrmLoginRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmProduct.Designer.cs">
+      <DependentUpon>FrmProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmSaleReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmSaleReport.Designer.cs">
+      <DependentUpon>FrmSaleReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmSalesChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmSalesChart.Designer.cs">
+      <DependentUpon>FrmSalesChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmStore.Designer.cs">
+      <DependentUpon>FrmStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmTable.Designer.cs">
+      <DependentUpon>FrmTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\ModeExe.cs" />
+    <Compile Include="Common\MsgBox.cs" />
+    <Compile Include="View\FrmUserSel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmUserSel.Designer.cs">
+      <DependentUpon>FrmUserSel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\FrmWait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\FrmWait.Designer.cs">
+      <DependentUpon>FrmWait.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="ProgressBarForm.resx">
+      <DependentUpon>ProgressBarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmAddTable.en.resx">
+      <DependentUpon>FrmAddTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmAuthor.resx">
+      <DependentUpon>FrmAuthor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmConfirmPassword.resx">
+      <DependentUpon>FrmConfirmPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmConnect.en.resx">
+      <DependentUpon>FrmConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmConnect.resx">
+      <DependentUpon>FrmConnect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmAddBillDetailt.en.resx">
+      <DependentUpon>FrmAddBillDetailt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmAddOrEditEmployees.en.resx">
+      <DependentUpon>FrmAddOrEditEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmAddProduct.en.resx">
+      <DependentUpon>FrmAddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmChangePassword.en.resx">
+      <DependentUpon>FrmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmChangePassword.resx">
+      <DependentUpon>FrmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmChangeTable.en.resx">
+      <DependentUpon>FrmChangeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmCusInfo.en.resx">
+      <DependentUpon>FrmCusInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmCus.en.resx">
+      <DependentUpon>FrmCus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmEmployees.en.resx">
+      <DependentUpon>FrmEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmGroup.en.resx">
+      <DependentUpon>FrmGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmGroupTb.en.resx">
+      <DependentUpon>FrmGroupTb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmLogin.en.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmLoginInfo.en.resx">
+      <DependentUpon>FrmLoginInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmLoginRole.en.resx">
+      <DependentUpon>FrmLoginRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmProduct.en.resx">
+      <DependentUpon>FrmProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmSaleReport.en.resx">
+      <DependentUpon>FrmSaleReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmSalesChart.en.resx">
+      <DependentUpon>FrmSalesChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmSetting.en.resx">
+      <DependentUpon>FrmSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmSetting.resx">
+      <DependentUpon>FrmSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmAddBillDetailt.resx">
+      <DependentUpon>FrmAddBillDetailt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmAddOrEditEmployees.resx">
+      <DependentUpon>FrmAddOrEditEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmCusInfo.resx">
+      <DependentUpon>FrmCusInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmAddProduct.resx">
+      <DependentUpon>FrmAddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmAddTable.resx">
+      <DependentUpon>FrmAddTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmChangeTable.resx">
+      <DependentUpon>FrmChangeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmCus.resx">
+      <DependentUpon>FrmCus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmEmployees.resx">
+      <DependentUpon>FrmEmployees.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmGroupTb.resx">
+      <DependentUpon>FrmGroupTb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmGroup.resx">
+      <DependentUpon>FrmGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmLoginInfo.resx">
+      <DependentUpon>FrmLoginInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmLoginRole.resx">
+      <DependentUpon>FrmLoginRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmMain.en.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmSaleReport.resx">
+      <DependentUpon>FrmSaleReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmSalesChart.resx">
+      <DependentUpon>FrmSalesChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmStore.en.resx">
+      <DependentUpon>FrmStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmStore.resx">
+      <DependentUpon>FrmStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmTable.en.resx">
+      <DependentUpon>FrmTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmTable.resx">
+      <DependentUpon>FrmTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmProduct.resx">
+      <DependentUpon>FrmProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmUserSel.en.resx">
+      <DependentUpon>FrmUserSel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmUserSel.resx">
+      <DependentUpon>FrmUserSel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\FrmWait.resx">
+      <DependentUpon>FrmWait.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resource.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resource.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ReportTemplate\SalesReport.rdlc" />
+    <None Include="DataSetAll.xsc">
+      <DependentUpon>DataSetAll.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetAll.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetAll.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetAll.xss">
+      <DependentUpon>DataSetAll.xsd</DependentUpon>
+    </None>
+    <None Include="Library\Sell_0008.xlsx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nonimg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\billPlease.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changeTable.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\merge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sytem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\category.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\accept24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\store16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dev16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pass16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\del16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\permission16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noneImage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pdf32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excel32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\source.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unnamed1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Settings-icon.png" />
+    <None Include="Resources\QRZalo.jpg" />
+    <None Include="Resources\language.png" />
+    <None Include="Resources\setting.png" />
+    <None Include="Resources\setting24.png" />
+    <None Include="Resources\cus16.png" />
+    <None Include="Resources\setting32.png" />
+    <None Include="Resources\Extension.png" />
+    <None Include="Resources\Database-Backup-icon.png" />
+    <None Include="Resources\connect-icon.png" />
+    <None Include="Resources\Restore-Window-icon.png" />
+    <None Include="Resources\Restore16.png" />
+    <None Include="Resources\ViFlag.png" />
+    <None Include="Resources\EngFlag.png" />
+    <None Include="Resources\exec.png" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

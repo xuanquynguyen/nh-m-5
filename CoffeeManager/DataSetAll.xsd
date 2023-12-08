@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetAll" targetNamespace="http://tempuri.org/DataSetAll.xsd" xmlns:mstns="http://tempuri.org/DataSetAll.xsd" xmlns="http://tempuri.org/DataSetAll.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CoffeeConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CoffeeConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CoffeeManager.Properties.Settings.GlobalReference.Default.CoffeeConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetAll" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetAll" msprop:Generator_UserDSName="DataSetAll">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DtDataExport" msprop:Generator_TableClassName="DtDataExportDataTable" msprop:Generator_TableVarName="tableDtDataExport" msprop:Generator_TablePropName="DtDataExport" msprop:Generator_RowDeletingName="DtDataExportRowDeleting" msprop:Generator_RowChangingName="DtDataExportRowChanging" msprop:Generator_RowEvHandlerName="DtDataExportRowChangeEventHandler" msprop:Generator_RowDeletedName="DtDataExportRowDeleted" msprop:Generator_UserTableName="DtDataExport" msprop:Generator_RowChangedName="DtDataExportRowChanged" msprop:Generator_RowEvArgName="DtDataExportRowChangeEvent" msprop:Generator_RowClassName="DtDataExportRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="idBill" msprop:Generator_ColumnVarNameInTable="columnidBill" msprop:Generator_ColumnPropNameInRow="idBill" msprop:Generator_ColumnPropNameInTable="idBillColumn" msprop:Generator_UserColumnName="idBill" type="xs:long" minOccurs="0" />
+              <xs:element name="ColNameTb" msprop:Generator_ColumnVarNameInTable="columnColNameTb" msprop:Generator_ColumnPropNameInRow="ColNameTb" msprop:Generator_ColumnPropNameInTable="ColNameTbColumn" msprop:Generator_UserColumnName="ColNameTb" type="xs:string" minOccurs="0" />
+              <xs:element name="ColCusName" msprop:Generator_ColumnVarNameInTable="columnColCusName" msprop:Generator_ColumnPropNameInRow="ColCusName" msprop:Generator_ColumnPropNameInTable="ColCusNameColumn" msprop:Generator_UserColumnName="ColCusName" type="xs:string" minOccurs="0" />
+              <xs:element name="drink" msprop:Generator_ColumnVarNameInTable="columndrink" msprop:Generator_ColumnPropNameInRow="drink" msprop:Generator_ColumnPropNameInTable="drinkColumn" msprop:Generator_UserColumnName="drink" type="xs:string" minOccurs="0" />
+              <xs:element name="ColFullName" msprop:Generator_ColumnVarNameInTable="columnColFullName" msprop:Generator_ColumnPropNameInRow="ColFullName" msprop:Generator_ColumnPropNameInTable="ColFullNameColumn" msprop:Generator_UserColumnName="ColFullName" type="xs:string" minOccurs="0" />
+              <xs:element name="ColDate" msprop:Generator_ColumnVarNameInTable="columnColDate" msprop:Generator_ColumnPropNameInRow="ColDate" msprop:Generator_ColumnPropNameInTable="ColDateColumn" msprop:Generator_UserColumnName="ColDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="unitPrice" msprop:Generator_ColumnVarNameInTable="columnunitPrice" msprop:Generator_ColumnPropNameInRow="unitPrice" msprop:Generator_ColumnPropNameInTable="unitPriceColumn" msprop:Generator_UserColumnName="unitPrice" type="xs:decimal" minOccurs="0" />
+              <xs:element name="quantity" msprop:Generator_ColumnVarNameInTable="columnquantity" msprop:Generator_ColumnPropNameInRow="quantity" msprop:Generator_ColumnPropNameInTable="quantityColumn" msprop:Generator_UserColumnName="quantity" type="xs:short" minOccurs="0" />
+              <xs:element name="intoMoney" msprop:Generator_ColumnVarNameInTable="columnintoMoney" msprop:Generator_ColumnPropNameInRow="intoMoney" msprop:Generator_ColumnPropNameInTable="intoMoneyColumn" msprop:Generator_UserColumnName="intoMoney" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="DtInfo" msprop:Generator_TableClassName="DtInfoDataTable" msprop:Generator_TableVarName="tableDtInfo" msprop:Generator_RowChangedName="DtInfoRowChanged" msprop:Generator_TablePropName="DtInfo" msprop:Generator_RowDeletingName="DtInfoRowDeleting" msprop:Generator_RowChangingName="DtInfoRowChanging" msprop:Generator_RowEvHandlerName="DtInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="DtInfoRowDeleted" msprop:Generator_RowClassName="DtInfoRow" msprop:Generator_UserTableName="DtInfo" msprop:Generator_RowEvArgName="DtInfoRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CompanyInfo" msprop:Generator_ColumnVarNameInTable="columnCompanyInfo" msprop:Generator_ColumnPropNameInRow="CompanyInfo" msprop:Generator_ColumnPropNameInTable="CompanyInfoColumn" msprop:Generator_UserColumnName="CompanyInfo" type="xs:string" minOccurs="0" />
+              <xs:element name="ReportTime" msprop:Generator_ColumnVarNameInTable="columnReportTime" msprop:Generator_ColumnPropNameInRow="ReportTime" msprop:Generator_ColumnPropNameInTable="ReportTimeColumn" msprop:Generator_UserColumnName="ReportTime" type="xs:string" minOccurs="0" />
+              <xs:element name="DateExport" msprop:Generator_ColumnVarNameInTable="columnDateExport" msprop:Generator_ColumnPropNameInRow="DateExport" msprop:Generator_ColumnPropNameInTable="DateExportColumn" msprop:Generator_UserColumnName="DateExport" type="xs:string" minOccurs="0" />
+              <xs:element name="UserExport" msprop:Generator_ColumnVarNameInTable="columnUserExport" msprop:Generator_ColumnPropNameInRow="UserExport" msprop:Generator_ColumnPropNameInTable="UserExportColumn" msprop:Generator_UserColumnName="UserExport" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

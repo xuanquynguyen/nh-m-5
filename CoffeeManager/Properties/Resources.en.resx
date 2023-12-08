@@ -1,0 +1,603 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ERROR_ACCESS_DATA" xml:space="preserve">
+    <value>Access error when accessing data</value>
+  </data>
+  <data name="ERROR_ADDING_DATA" xml:space="preserve">
+    <value>Error adding data</value>
+  </data>
+  <data name="ERROR_ADD_BILL" xml:space="preserve">
+    <value>Error adding invoice</value>
+  </data>
+  <data name="ERROR_ADD_BILLDT" xml:space="preserve">
+    <value>Error adding bill details</value>
+  </data>
+  <data name="ERROR_CF_PASSWORD_NOT_MATCH" xml:space="preserve">
+    <value>Confirmation password does not match</value>
+  </data>
+  <data name="ERROR_CREATED_ACCOUNT" xml:space="preserve">
+    <value>A login account has been created for this user</value>
+  </data>
+  <data name="ERROR_DELETING_USER" xml:space="preserve">
+    <value>Error deleting user</value>
+    <comment>Error deleting user</comment>
+  </data>
+  <data name="ERROR_DEL_ADMIN" xml:space="preserve">
+    <value>Can't delete admin account</value>
+  </data>
+  <data name="ERROR_EMPTY_SERVERNAME" xml:space="preserve">
+    <value>Please enter server name</value>
+  </data>
+  <data name="ERROR_ENTER_CF_PASSWORD" xml:space="preserve">
+    <value>Please confirm password</value>
+  </data>
+  <data name="ERROR_ENTER_LOGIN" xml:space="preserve">
+    <value>Please enter username and password</value>
+  </data>
+  <data name="ERROR_ENTER_NEW_PASSWORD" xml:space="preserve">
+    <value>Please enter new password</value>
+  </data>
+  <data name="ERROR_ENTER_ONE_INFO" xml:space="preserve">
+    <value>Need to fill in at least 1 customer information</value>
+  </data>
+  <data name="ERROR_ENTER_PASSWORD" xml:space="preserve">
+    <value>Please enter password</value>
+  </data>
+  <data name="ERROR_ENTER_UNIT" xml:space="preserve">
+    <value>Please enter unit</value>
+  </data>
+  <data name="ERROR_ENTER_UNIT_PRICE" xml:space="preserve">
+    <value>Please enter unit price</value>
+  </data>
+  <data name="ERROR_ENTER_USER" xml:space="preserve">
+    <value>Please enter user name</value>
+  </data>
+  <data name="ERROR_ENTRIEVING_DATA" xml:space="preserve">
+    <value>Error retrieving data</value>
+  </data>
+  <data name="ERROR_EXISTS_NAME" xml:space="preserve">
+    <value>Name already exists, please choose another name</value>
+  </data>
+  <data name="ERROR_EXPORTING_PDF" xml:space="preserve">
+    <value>Error when exporting file</value>
+  </data>
+  <data name="ERROR_GETTING_STORE_INFO" xml:space="preserve">
+    <value>Error getting store information</value>
+  </data>
+  <data name="ERROR_LOADING_AREA" xml:space="preserve">
+    <value>Error loading area</value>
+  </data>
+  <data name="ERROR_LOAD_DATA_BILL" xml:space="preserve">
+    <value>Error loading invoice data</value>
+    <comment>Error loading invoice data</comment>
+  </data>
+  <data name="ERROR_LOAD_DB" xml:space="preserve">
+    <value>Error retrieving database name</value>
+  </data>
+  <data name="ERROR_LOAD_GROUP" xml:space="preserve">
+    <value>Error loading group</value>
+  </data>
+  <data name="ERROR_MANIPULATING_USER" xml:space="preserve">
+    <value>Error when manipulating user data</value>
+    <comment>Error when manipulating user data</comment>
+  </data>
+  <data name="ERROR_NOT_LESS_TIME" xml:space="preserve">
+    <value>The end time must not be less than the start time</value>
+  </data>
+  <data name="ERROR_OUT_SIZE_IMAGE" xml:space="preserve">
+    <value>The image cannot be larger than 64x64 in size, current sizes are: </value>
+  </data>
+  <data name="ERROR_PRODUCT_NAME_EMPTY" xml:space="preserve">
+    <value>Please enter name</value>
+  </data>
+  <data name="ERROR_PRODUCT_PRICE_EMPTY" xml:space="preserve">
+    <value>Please enter product price</value>
+  </data>
+  <data name="ERROR_PRODUCT_QUANTITY_EMPTY" xml:space="preserve">
+    <value>Please enter product quantity</value>
+  </data>
+  <data name="ERROR_RETRIEVING_LOGIN_INFO" xml:space="preserve">
+    <value>Error retrieving Login information by user ID</value>
+  </data>
+  <data name="ERROR_RETRIEVING_USER" xml:space="preserve">
+    <value>Error retrieving username</value>
+  </data>
+  <data name="ERROR_SAVE_DATA" xml:space="preserve">
+    <value>Error while saving data</value>
+  </data>
+  <data name="ERROR_SELECT_AC" xml:space="preserve">
+    <value>Please select an account</value>
+  </data>
+  <data name="ERROR_SELECT_EM" xml:space="preserve">
+    <value>Please select an employee</value>
+  </data>
+  <data name="ERROR_SHOW_ERROR" xml:space="preserve">
+    <value>Error! An error occurred. Please try again later</value>
+  </data>
+  <data name="ERROR_SWITCHING_TB" xml:space="preserve">
+    <value>Error when switching tables</value>
+  </data>
+  <data name="ERROR_UD_STATUS_TB" xml:space="preserve">
+    <value>Status update error when switching tables</value>
+  </data>
+  <data name="ERROR_UPDATE_BILL" xml:space="preserve">
+    <value>Invoice update error</value>
+    <comment>Invoice update error</comment>
+  </data>
+  <data name="ERROR_UPDATE_BILL_STATUS" xml:space="preserve">
+    <value>Error when updating bill status</value>
+    <comment>Error when updating bill status</comment>
+  </data>
+  <data name="ERROR_UPDATE_CUS_STATUS" xml:space="preserve">
+    <value>Error when updating customer status</value>
+    <comment>Error when updating customer status</comment>
+  </data>
+  <data name="ERROR_UPDATE_TABLE_STATUS" xml:space="preserve">
+    <value>Error when updating table status</value>
+    <comment>Error when updating table status</comment>
+  </data>
+  <data name="ERROR_UPDATE_TB_STATUS" xml:space="preserve">
+    <value>Error updating table status</value>
+  </data>
+  <data name="ERROR_UPDATING_DATA" xml:space="preserve">
+    <value>Error updating data</value>
+  </data>
+  <data name="ERROR_USER_NOTFOUND" xml:space="preserve">
+    <value>Staff with this username could not be found</value>
+  </data>
+  <data name="ERROR_WHEN_DEL" xml:space="preserve">
+    <value>Error when deleting</value>
+    <comment>Error when deleting</comment>
+  </data>
+  <data name="ERROR_WHEN_UPDATING" xml:space="preserve">
+    <value>Error when updating</value>
+  </data>
+  <data name="ERROR_WRONG_USERNAME" xml:space="preserve">
+    <value>Wrong username or password</value>
+  </data>
+  <data name="ERR_EMPTY_DBNNAME" xml:space="preserve">
+    <value>Please enter database name</value>
+  </data>
+  <data name="INF_CONNECT_SUCCESS" xml:space="preserve">
+    <value>Connect success</value>
+  </data>
+  <data name="INF_WAIT_LOAD_SERVER" xml:space="preserve">
+    <value>Loading server, please wait...</value>
+  </data>
+  <data name="MSG_ALREADY_OCCUPIED" xml:space="preserve">
+    <value>The table is occupied</value>
+    <comment>The table is occupied</comment>
+  </data>
+  <data name="MSG_CHECK_INSTALL_SQL" xml:space="preserve">
+    <value>SQL Server is not installed, please install SQL server before continuing</value>
+  </data>
+  <data name="MSG_CHOOSE_AREA" xml:space="preserve">
+    <value>Please choose area</value>
+  </data>
+  <data name="MSG_CLICK_YES_LOG_OUT" xml:space="preserve">
+    <value>Click Yes to log out of your account</value>
+    <comment>Click Yes to log out of your account</comment>
+  </data>
+  <data name="MSG_CLOSE_FORM" xml:space="preserve">
+    <value>Click Yes to close the application</value>
+    <comment>Click Yes to close the application</comment>
+  </data>
+  <data name="MSG_CONNECT_STR_NONE" xml:space="preserve">
+    <value>You have not established a database connection, please set it up first</value>
+  </data>
+  <data name="MSG_DATABASE_NOT_FOUND" xml:space="preserve">
+    <value>The database is not found, you can use the Restore database function in the upper right corner of the form</value>
+  </data>
+  <data name="MSG_DELETED" xml:space="preserve">
+    <value>Deleted</value>
+    <comment>Deleted </comment>
+  </data>
+  <data name="MSG_DELETE_LOGIN_FIRST" xml:space="preserve">
+    <value>The user has a login account, please delete the login account first.</value>
+  </data>
+  <data name="MSG_DEL_AC" xml:space="preserve">
+    <value>Delete login account?</value>
+  </data>
+  <data name="MSG_DEL_QUES" xml:space="preserve">
+    <value> will be deleted, Continue?</value>
+    <comment> Will be deleted, Continue?</comment>
+  </data>
+  <data name="MSG_DONE" xml:space="preserve">
+    <value>Done!</value>
+    <comment>Done!</comment>
+  </data>
+  <data name="MSG_DONT_SAVE_C" xml:space="preserve">
+    <value>Please choose a different save location than the SQL installation Please choose a different save location than the SQL installation location</value>
+  </data>
+  <data name="MSG_ENTER_TABLE" xml:space="preserve">
+    <value>Please enter table name</value>
+  </data>
+  <data name="MSG_ENTER_USERNAME" xml:space="preserve">
+    <value>Please enter username</value>
+  </data>
+  <data name="MSG_ERROR_SETTING_UP" xml:space="preserve">
+    <value>Error when setting up</value>
+  </data>
+  <data name="MSG_HAVENT_CHOSEN_TB" xml:space="preserve">
+    <value>Bạn chưa chọn bàn chuyển hoặc bàn nhận!</value>
+  </data>
+  <data name="MSG_HAVENT_SELECT_TABLE" xml:space="preserve">
+    <value>Haven't selected a table yet</value>
+    <comment>Haven't selected a table yet</comment>
+  </data>
+  <data name="MSG_MAX_NUMBER" xml:space="preserve">
+    <value>Max wight 150, max height 160</value>
+  </data>
+  <data name="MSG_NOTHING_TO_SAVE" xml:space="preserve">
+    <value>Nothing to save</value>
+    <comment>Nothing to save</comment>
+  </data>
+  <data name="MSG_NOTIFICATION" xml:space="preserve">
+    <value>Notification</value>
+    <comment>Notification</comment>
+  </data>
+  <data name="MSG_NOT_ALLOWED" xml:space="preserve">
+    <value>Number not allowed is 0</value>
+  </data>
+  <data name="MSG_NO_RIGHT" xml:space="preserve">
+    <value>You do not have permission to perform this operation</value>
+  </data>
+  <data name="MSG_OUT_OF_LIST" xml:space="preserve">
+    <value>out of list</value>
+    <comment> out of list</comment>
+  </data>
+  <data name="MSG_PRESS_NUMBER" xml:space="preserve">
+    <value>Please enter the number</value>
+  </data>
+  <data name="MSG_QUES_ACCEPT" xml:space="preserve">
+    <value>You have not entered the payment amount, do you want to continue?</value>
+  </data>
+  <data name="MSG_RESET_LANG" xml:space="preserve">
+    <value>The software needs to restart, click OK to continue.</value>
+  </data>
+  <data name="MSG_SELECT_AC" xml:space="preserve">
+    <value>Chọn tài khoản muốn xóa</value>
+  </data>
+  <data name="MSG_SELECT_GR_FIRST" xml:space="preserve">
+    <value>Select the menu group first</value>
+    <comment>Select the menu group first</comment>
+  </data>
+  <data name="MSG_SELECT_TABLE_FIRST" xml:space="preserve">
+    <value>Please select table or customer first</value>
+    <comment>Please select table or customer first</comment>
+  </data>
+  <data name="MSG_TABLE_EMPTY" xml:space="preserve">
+    <value>The table has no guests</value>
+    <comment>The table has no guests</comment>
+  </data>
+  <data name="MSG_WANT_TO_SAVE" xml:space="preserve">
+    <value>Do you want to save data before leaving?</value>
+    <comment>Do you want to save data before leaving?</comment>
+  </data>
+  <data name="MSG_WILL_DELETE" xml:space="preserve">
+    <value> will be deleted, continue?</value>
+  </data>
+  <data name="MSG_WRONG_PASSWORD" xml:space="preserve">
+    <value>Wrong password</value>
+  </data>
+  <data name="SHOW_ADDRESS" xml:space="preserve">
+    <value>Address: </value>
+    <comment>Address: </comment>
+  </data>
+  <data name="SHOW_ALREADY_EXIST" xml:space="preserve">
+    <value>Already exist</value>
+  </data>
+  <data name="SHOW_BILL_CODE" xml:space="preserve">
+    <value>Bill code: </value>
+    <comment>Bill code: </comment>
+  </data>
+  <data name="SHOW_BILL_FROM" xml:space="preserve">
+    <value>Bill from </value>
+  </data>
+  <data name="SHOW_CANT_DEL" xml:space="preserve">
+    <value>Tables that are occupied by guests cannot be deleted</value>
+  </data>
+  <data name="SHOW_CONTINUE" xml:space="preserve">
+    <value>Continue?</value>
+  </data>
+  <data name="SHOW_CUS_LIST" xml:space="preserve">
+    <value>Customers list</value>
+    <comment>Customers list</comment>
+  </data>
+  <data name="SHOW_CUS_WAITING" xml:space="preserve">
+    <value>Customers are waiting...</value>
+    <comment>Customers are waiting...</comment>
+  </data>
+  <data name="SHOW_DAY" xml:space="preserve">
+    <value>Day: </value>
+    <comment>Day: </comment>
+  </data>
+  <data name="SHOW_EMPLOYEES" xml:space="preserve">
+    <value>Employees: </value>
+    <comment>Employees: </comment>
+  </data>
+  <data name="SHOW_EXTENTION_XLS" xml:space="preserve">
+    <value>.xls</value>
+  </data>
+  <data name="SHOW_FROM_YEAR" xml:space="preserve">
+    <value>From year </value>
+  </data>
+  <data name="SHOW_HAVENT_CHOSEN_TB" xml:space="preserve">
+    <value>Chưa chọn bàn</value>
+  </data>
+  <data name="SHOW_HAVE_GUEST" xml:space="preserve">
+    <value>The table is occupied</value>
+  </data>
+  <data name="SHOW_INACTIVE" xml:space="preserve">
+    <value>Inactive</value>
+  </data>
+  <data name="SHOW_INTO_MONEY" xml:space="preserve">
+    <value>Into money</value>
+    <comment>Into money</comment>
+  </data>
+  <data name="SHOW_IS_ACTIVE" xml:space="preserve">
+    <value>Is active</value>
+  </data>
+  <data name="SHOW_KEY_ENCRYPT" xml:space="preserve">
+    <value>@key#yek</value>
+  </data>
+  <data name="SHOW_LOADING_DATA" xml:space="preserve">
+    <value>Loading data, please wait...</value>
+  </data>
+  <data name="SHOW_NAME_ADD_BILLDT" xml:space="preserve">
+    <value>Add drinks (food) to the bill</value>
+  </data>
+  <data name="SHOW_NONE" xml:space="preserve">
+    <value />
+    <comment>""</comment>
+  </data>
+  <data name="SHOW_NO_GUEST_YET" xml:space="preserve">
+    <value>No guests yet</value>
+  </data>
+  <data name="SHOW_NUMBER" xml:space="preserve">
+    <value>Quantily</value>
+    <comment>Number</comment>
+  </data>
+  <data name="SHOW_OLD_CUSTOMERS" xml:space="preserve">
+    <value>Old customers</value>
+    <comment>Old customers</comment>
+  </data>
+  <data name="SHOW_PDF_FILTER" xml:space="preserve">
+    <value>PDF file (*.pdf)|*.pdf</value>
+  </data>
+  <data name="SHOW_PHONE_NUMBER" xml:space="preserve">
+    <value>Phone number: </value>
+    <comment>Phone number: </comment>
+  </data>
+  <data name="SHOW_PRODUCT_NAME" xml:space="preserve">
+    <value>Product name</value>
+    <comment>Product name</comment>
+  </data>
+  <data name="SHOW_RP_SALES_RP_NAME" xml:space="preserve">
+    <value>SALES REPORT.pdf</value>
+  </data>
+  <data name="SHOW_RP_SALES_XLS_NAME" xml:space="preserve">
+    <value>SALES REPORT_</value>
+  </data>
+  <data name="SHOW_SALES_CHART" xml:space="preserve">
+    <value>Sales chart</value>
+  </data>
+  <data name="SHOW_SELECT_FOR_DEL" xml:space="preserve">
+    <value>Select 1 Line to delete</value>
+  </data>
+  <data name="SHOW_SELECT_FOR_EDIT" xml:space="preserve">
+    <value>Select 1 Line to edit</value>
+  </data>
+  <data name="SHOW_SETTING_PR" xml:space="preserve">
+    <value>Product display settings</value>
+  </data>
+  <data name="SHOW_SETTING_TB" xml:space="preserve">
+    <value>Table display settings</value>
+  </data>
+  <data name="SHOW_TABLE_CUS" xml:space="preserve">
+    <value>Table/Customers: </value>
+    <comment>Table/Customers: </comment>
+  </data>
+  <data name="SHOW_TABLE_EMPTY" xml:space="preserve">
+    <value>Empty table</value>
+  </data>
+  <data name="SHOW_TABLE_LIST" xml:space="preserve">
+    <value>Table list</value>
+    <comment>Table list</comment>
+  </data>
+  <data name="SHOW_TABLE_MERGE" xml:space="preserve">
+    <value>Table merge</value>
+  </data>
+  <data name="SHOW_TAX_CODE" xml:space="preserve">
+    <value>Tax code:</value>
+    <comment>Tax code: </comment>
+  </data>
+  <data name="SHOW_TO" xml:space="preserve">
+    <value> to </value>
+  </data>
+  <data name="SHOW_TOOLTIP_HELP" xml:space="preserve">
+    <value>Right click on the grid to edit or delete</value>
+  </data>
+  <data name="SHOW_TOOLTIP_SET_PR" xml:space="preserve">
+    <value>Product size setting</value>
+  </data>
+  <data name="SHOW_TOOLTIP_SET_TB" xml:space="preserve">
+    <value>Table size setting</value>
+  </data>
+  <data name="SHOW_TOTAL_MN" xml:space="preserve">
+    <value>Total money:</value>
+  </data>
+  <data name="SHOW_TOTAL_MONEY" xml:space="preserve">
+    <value>Total money</value>
+    <comment>Total money</comment>
+  </data>
+  <data name="SHOW_TO_DAY" xml:space="preserve">
+    <value> to day </value>
+  </data>
+  <data name="SHOW_TO_YEAR" xml:space="preserve">
+    <value> to year </value>
+  </data>
+  <data name="SHOW_UNIT_PRICE" xml:space="preserve">
+    <value>Unit price</value>
+    <comment>Unit price</comment>
+  </data>
+  <data name="SHOW_WAIT_EXPORT" xml:space="preserve">
+    <value>Exporting pdf file, please wait...</value>
+  </data>
+  <data name="SHOW_WAIT_EXPORT_FILE" xml:space="preserve">
+    <value>Exporting file, please wait...</value>
+  </data>
+  <data name="SHOW_XLS_CUS" xml:space="preserve">
+    <value>Customer</value>
+  </data>
+  <data name="SHOW_XLS_DATE" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="SHOW_XLS_EM" xml:space="preserve">
+    <value>Employees</value>
+  </data>
+  <data name="SHOW_XLS_FILTER" xml:space="preserve">
+    <value>Excel Documents (*.xls)|*.xls</value>
+  </data>
+  <data name="SHOW_XLS_ID" xml:space="preserve">
+    <value>Bill ID</value>
+  </data>
+  <data name="SHOW_XLS_INTO_MN" xml:space="preserve">
+    <value>Into money</value>
+  </data>
+  <data name="SHOW_XLS_PR" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="SHOW_XLS_QUANTILY" xml:space="preserve">
+    <value>Quantily</value>
+  </data>
+  <data name="SHOW_XLS_TB" xml:space="preserve">
+    <value>Table</value>
+  </data>
+  <data name="SHOW_XLS_TITLE_NAME" xml:space="preserve">
+    <value>SALES REPORT</value>
+  </data>
+  <data name="SHOW_XLS_UN_PRC" xml:space="preserve">
+    <value>Unt Price</value>
+  </data>
+  <data name="SHOW_YEAR" xml:space="preserve">
+    <value>Year </value>
+  </data>
+</root>
